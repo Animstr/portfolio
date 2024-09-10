@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import 'libs/bootstrap-reboot.min';
+@import 'base/variavle';
+@import 'base/mixins';
+* {
+    font-family: "Open Sans", sans-serif;
+    font-style: normal;
+    position: relative;
+}
+.container{
+    width: 1140px;
+    margin: 0 auto;
+}
+:root {
+    --animate-delay: 0.5s;
+  }
+
+@import 'blocks/btn';
+@import 'blocks/promo';
+@import 'blocks/title';
+@import 'blocks/contacts';
+@import 'blocks/nav-menu';
+@import 'blocks/about-me';
+@import 'blocks/description';
+@import 'blocks/experience';
+@import 'blocks/header';
+@import 'blocks/skills';
+@import 'blocks/portfolio';
+@import 'blocks/price';
+@import 'blocks/contacts-footer';
+@import 'blocks/modal';
+
+@import 'base/media';

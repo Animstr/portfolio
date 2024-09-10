@@ -1,0 +1,44 @@
+.skills{
+    padding-top: 120px;
+    &__cards{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 270px;
+        grid-auto-rows: 270px;
+        gap: 13px;
+    }
+    &__card{
+        border: 1px solid #000;
+        padding: 30px 30px 25px;
+        .title{
+            margin-top: 20px;
+        }
+        .description{
+            margin-top: 15px;
+        }
+    }
+    &__measuring-scales{
+        margin-top: 120px;
+        display: grid;
+        grid-template-columns: repeat(3, 350px);
+        grid-template-rows: repeat(2, 70px);
+        gap: 30px 45px;
+    }
+    &__text{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__line{
+        width: 350px;
+        height: 14px;
+        background: #E8E4DE;
+        border-radius: 4px;
+        margin-top: 27px;
+        span{
+            background: $main-color;
+            display: block;
+            height: 14px;
+            border-radius: 4px;
+        }
+    }
+}

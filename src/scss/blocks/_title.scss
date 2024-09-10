@@ -1,0 +1,29 @@
+.title{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    color: #000000;
+    margin: 0 0;
+    &_48{
+        font-size: 48px;
+        line-height: 60px;
+        margin-top: 10px;
+    }
+    &_circle{
+        position: relative;
+        z-index: 0;
+        @include before-circle;
+    }
+    &_36{
+        font-size: 36px;
+        line-height: 60px;
+    }
+    &_14{
+        font-size: 14px;
+        line-height: 21px;
+    }
+    &_20{
+        font-size: 20px;
+        line-height: 30px;
+    }
+}

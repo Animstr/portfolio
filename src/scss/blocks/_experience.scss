@@ -1,0 +1,66 @@
+.experience{
+    padding-top: 120px;
+    &__education{
+        margin-left: 115px;
+    }
+    &__block-name{
+        @include before-circle;
+        &::before{
+            width: 15px;
+            height: 15px;
+            left: -49px;
+            top: 15px;
+        }
+    }
+    &__content{
+        display: flex;
+    }
+    &__items{
+        display: grid;
+        grid-template-rows: repeat(2, 130px);
+        width: 420px;
+        gap: 45px;
+        padding-top: 45px;
+        padding-left: 0;
+        position: relative;
+        &::before{
+            content: '';
+            border: 1px solid #000;
+            height: 100%;
+            width: 0;
+            position: absolute;
+            left: -43px;
+        }
+    }
+    &__item{
+        list-style: none;
+        position: relative;
+        .title_circle{
+            position: absolute;
+            top: 13px;
+            left: 14px;
+            &::before{
+                top: -13px;
+                left: -14px;
+            }
+        }
+    }
+    &__work{
+        margin-left: 180px;
+    }
+
+}
+.item-padding{
+    padding-left: 55px;
+    position: relative;
+    &::before{
+        content: '';
+        width: 42px;
+        height: 0;
+        border: 1px solid #000;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: -41px;
+    }
+}

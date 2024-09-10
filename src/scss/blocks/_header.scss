@@ -1,0 +1,19 @@
+.section-header{
+    text-align: center;
+        h2{
+            margin-top: 6px;
+            &::before{
+                left: 50%;
+                transform: translateX(-50%);
+            }
+        }
+        hr{
+            border: 1px solid $main-color;
+            opacity: 1;
+            width: 60px;
+            display: block;
+            margin: 0 auto;
+            margin-top: 25px;
+            margin-bottom: 60px;
+        }
+}
